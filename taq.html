@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top, Left, Right, Bottom Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top {
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .middle {
+            display: flex;
+            flex: 1;
+        }
+
+        .left {
+            background-color: lightcoral;
+            width: 20%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .right {
+            background-color: lightgreen;
+            width: 20%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            background-color: lightgray;
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bottom {
+            background-color: lightsalmon;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top">
+        <h1> Welcome Page</h1>
+    </div>
+
+    <div class="middle">
+        <div class="left">
+            <a href="https://klh.edu.in/bhp-cse/"> CSE</a>
+        <p>The Department of Computer Science and Engineering has eminent faculty with a blend of Academics and industry with varied specializations to impart their skill on the latest technologies for B.Tech students. The department offers a Doctoral program (PhD) in Computer Science and Engineering and works on emerging areas. " </p>
+        </div>
+        <div class="content">
+            <a href="https://klh.edu.in/bhp-csit/">CSIT</a>
+            <p style="font-size: small;">The B.Tech. Computer Science and Information Technology, an undergraduate programme, is crafted to nurture motivated, innovative, and passionate graduates to fill ICT positions across sectors who can conceptualize, design, analyse, and develop ICT applications to meet modern-day requirements.
+
+                The B.Tech. in Computer Science and Information Technology curriculum is outcome-based and it delivers the most advanced theoretical concepts and practical skills in the domain. By enrolling on this programme, students develop critical, innovative, and problem-solving abilities for a smooth transition from academia to the corporate world. .</p>
+        </div>
+        <div class="right">
+            <a href="https://klh.edu.in/bhp-ece/">ECE</a>
+            <p>ECE is a broad engineering field with sub fields - Analog/Digital electronics, VLSI, 4G/5G, Radio and Satellite Communications, Embedded systems, Signal & Image Processing, Robotics, IOT, Smart Cities, Edge Computing, AI, Quantum Circuitry, Nano-electronics, Photonics, Renewable Energy and many others. </p>
+        </div>
+    </div>
+
+    <div class="bottom">KLHB @ 2022</div>
+
+</body>
+</html>
